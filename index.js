@@ -24,7 +24,7 @@ const extract = () => {
 		}
 		
 		urls = [];
-		csvData = [['URL', 'anchor', 'rel']];
+		csvData = [['URL', 'Anchor', 'Rel']];
 		atag.forEach((tag) => {
 			let tr = document.createElement('tr');
 			tr.innerHTML = '<td>' + tag.attributes.href.value + '</td><td>' + tag.text + '</td><td>' + tag.rel + '</td>';
